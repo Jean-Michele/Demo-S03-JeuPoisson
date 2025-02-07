@@ -6,9 +6,10 @@ public class JeuPoisson : MonoBehaviour
 {
     public float poidsSaumon = 10.5f;
     [SerializeField] private float _poidsSardine = 100f;
-
+    [SerializeReference] private float _speed = 10f;
     [SerializeReference] private GameObject _sardine;
     [SerializeReference] private GameObject _saumon;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,8 @@ public class JeuPoisson : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector3 deplacement = new Vector3(_speed, 0f, 0f);
+        _sardine.transform.position += deplacement * Time.deltaTime;
         //Debug.Log(poidsSaumon);
 
     }
@@ -35,6 +38,8 @@ public class JeuPoisson : MonoBehaviour
         {
             Debug.Log("Non!");
         }
+
+        
     }
 
 }

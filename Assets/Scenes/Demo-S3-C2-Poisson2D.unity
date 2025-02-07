@@ -510,8 +510,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92fa852c8483d774bb196f5a44f2a277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poidsSaumon: 100
+  poidsSaumon: 19
   _poidsSardine: 20
+  _speed: 0.01
   _sardine: {fileID: 1201327683}
   _saumon: {fileID: 2114336832}
 --- !u!4 &1359390896
